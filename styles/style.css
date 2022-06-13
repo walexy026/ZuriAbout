@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav div a{
+    font-size: small;
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: purple;  
+}
+nav ul li a {
+    font-size: small;
+    text-decoration: none;
+  color: rgb(252, 245, 245);
+  padding: 8px 16px;
+  background-color: purple;
+  border-radius: 50px;
+}
+nav ul li a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    background-color: rgb(240, 234, 227);
+    /* padding: 10px; */
+    padding: 3vh;
+    z-index: 1;
+    position: sticky;
+    box-shadow: 0px 2px 7px rgba(1, 0, 0, 0.23);
+}
+@media screen and (max-width:450px) {
+    nav ul li a{
+font-size: smaller;
+padding: 5px;
+    }
+    
+}
+nav ul{
+    justify-content: space-between;
+    display: flex;
+    gap: 2vw;
+    list-style: none;
+}
+
+.text{
+    background-color: whitesmoke;
+    color: rgb(83, 83, 83);
+    text-align: center;
+}
+.text h1{
+    display: inline;
+    position: relative;
+    background-color: azure;
+    -webkit-text-stroke: 0.3vw rgb(83, 83, 83);;
+    text-transform: uppercase;
+}
+.text h1::before{
+    content: attr(text-data);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: aquamarine;
+    border-right: 2px solid rgb(83, 83, 83);;
+    -webkit-text-stroke: 0.3vw rgb(83, 83, 83);;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate{
+    0%, 10%, 100%{
+width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+.text p{
+    color: black;
+    padding-top: 5vh;
+    text-align: center;
+}
+
+ul li{
+    list-style: none;
+}
+.skills a{
+    text-decoration: none;
+    background-color: azure;
+}
+.skills a:hover{
+    color: aqua;
+    background-color: blueviolet;
+    list-style: none;
+    text-decoration: none;
+}
+.pics{
+    background-color: rgb(240, 234, 227);
+    display: flex;
+    justify-content: center;
+}
+.pics img{
+    border-radius: 50%;    
+}
+#abt{
+    border-bottom: 2px solid black;
+    display: inline;
+}
+.aboutMe{
+    text-align: center;
+    padding-top: 20px;
+    background-color: azure;
+}
+.aboutMe p{
+    margin: 10px 20px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+.contact{
+    color: blue;
+    background-color: navajowhite;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: grab;
+    margin-bottom: 15px;   
+    text-decoration: none;
+} 
+.contact1 {
+    display: inline-block;
+    display: grid;
+    place-items: center;
+    justify-content: center;   
+    
+}
+fieldset{
+    background-image:linear-gradient(blue, yellow);
+    /* width: 50vh; */
+    /* margin: auto; */
+    padding-top: 30px;
+    margin-top: 40px;  
+    border-top-right-radius: 20px;  
+    border-bottom-left-radius: 20px; 
+}
+@media screen and (max-width:450px) {
+    fieldset{    
+        display: grid;
+        place-items: center;
+    }
+    
+}
+.Hobbies{
+    background-color: rgb(240, 234, 227);
+    padding: 45px;
+    box-shadow: 0px 5px 7px rgba(5, 0, 0, 0.23);
+    color: blue;
+}
+.skillHobbies{
+    display: flex;
+    justify-content: space-around;
+}
+@media screen and (max-width: 450px) {
+    .skillHobbies{
+        display: block;
+    }
+    .Hobbies ul{
+        display: grid;
+        place-items: center; 
+        margin-bottom: 10px;
+    }
+    .skillProgress{
+        display: grid;
+        place-items: center; 
+    }
+}
+.skillHobbies .Hobbies{
+    line-height: 10vh;
+    padding-top: 3vh;
+}
+.skillProgress{
+    display: grid;
+    padding-top: 3vh;
+    background-color: rgb(240, 234, 227);
+    padding: 15px;
+    box-shadow: 0px 5px 7px rgba(5, 0, 0, 0.23);
+    margin: 5px;
+}
+.skillProgress label{
+    color: blue;
+}
+.skillProgress progress{
+    margin-bottom: 20px;
+}
+.welcome {
+    text-align: center;
+    font-size: small;
+    margin-bottom: 20px;
+}
+form{
+    text-align: center;
+    box-shadow: 5px;
+box-shadow: 0px 2px 7px rgba(1, 0, 0, 0.23);
+
+}
+label{
+    color: azure;
+    padding: auto;
+    gap: 2vh;
+}
+input{
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+button{
+    color: blue;
+    background-color: navajowhite;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: grab;
+    margin-bottom: 15px;
+}
+button:hover{
+    border-radius: 20px;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);height: auto;
+    color: navajowhite;
+    background-color: blue;
+}
+footer{
+    background-color:  navajowhite;
+}
+footer h3{
+    text-align: center;
+    text-transform: capitalize;
+    color: blue;
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+}
